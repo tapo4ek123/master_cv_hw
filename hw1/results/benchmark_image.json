@@ -1,0 +1,29 @@
+{
+  "source": "hw1/demo_input.mp4",
+  "mode": "image",
+  "cpu": "AMD Ryzen 5 5600U with Radeon Graphics",
+  "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "versions": {
+    "python": "3.10.12",
+    "mediapipe": "0.10.35",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4"
+  },
+  "input_resolution": [
+    640,
+    480
+  ],
+  "processing_resolution": [
+    640,
+    480
+  ],
+  "source_fps": 25.0,
+  "frames_processed": 300,
+  "warmup_frames": 5,
+  "frames_measured": 295,
+  "processing_fps": 55.53917313119897,
+  "mean_latency_ms": 18.00530947116771,
+  "p95_latency_ms": 23.87422079991666,
+  "throughput_fps": 50.01888799684393,
+  "measurement": "Processing includes resize, RGB conversion, segmentation, mask smoothing and compositing. Throughput also includes capture, display and recording. First 5 frames are excluded as warmup."
+}

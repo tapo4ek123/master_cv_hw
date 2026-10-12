@@ -1,0 +1,29 @@
+{
+  "source": "0",
+  "mode": "color",
+  "cpu": "AMD Ryzen 5 5600U with Radeon Graphics",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "versions": {
+    "python": "3.12.10",
+    "mediapipe": "0.10.35",
+    "opencv": "4.10.0",
+    "numpy": "1.26.4"
+  },
+  "input_resolution": [
+    640,
+    480
+  ],
+  "processing_resolution": [
+    640,
+    480
+  ],
+  "source_fps": 30.0,
+  "frames_processed": 300,
+  "warmup_frames": 5,
+  "frames_measured": 295,
+  "processing_fps": 50.43053573991678,
+  "mean_latency_ms": 19.829255932502026,
+  "p95_latency_ms": 21.257529995637015,
+  "throughput_fps": 26.54284994018202,
+  "measurement": "Processing includes resize, RGB conversion, segmentation, mask smoothing and compositing. Throughput also includes capture, display and recording. First 5 frames are excluded as warmup."
+}

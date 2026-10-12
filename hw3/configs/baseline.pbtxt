@@ -1,0 +1,6 @@
+name: "resnet18"
+backend: "python"
+max_batch_size: 1
+input [{ name: "IMAGE" data_type: TYPE_FP32 dims: [3, 224, 224] }]
+output [{ name: "LOGITS" data_type: TYPE_FP32 dims: [1000] }]
+instance_group [{ count: 1 kind: KIND_GPU }]

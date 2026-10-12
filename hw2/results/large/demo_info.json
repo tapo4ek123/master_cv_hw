@@ -1,0 +1,14 @@
+{
+  "method": "ddpm",
+  "steps": 1000,
+  "images": 4,
+  "seed": 42,
+  "optimizer_steps": 10000,
+  "weights": "ema",
+  "frames": 120,
+  "fps": 10.0,
+  "duration_seconds": 12.0,
+  "width": 1024,
+  "height": 304,
+  "note": "Accelerated visualization of the reverse diffusion process. Video duration is not generation latency."
+}

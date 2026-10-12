@@ -1,0 +1,46 @@
+{
+  "checkpoint": "runs/cats128/model.pt",
+  "epoch": 200,
+  "seed": 42,
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "resolution": 128,
+  "ddim_eta": 0,
+  "sampling_precision": "fp32",
+  "ddim_use_clipped_model_output": true,
+  "measurement": "Same checkpoint, image count and initial CPU-generated noise. CUDA warmup before each method; synchronized generation timing, excluding model loading, saving images and demo recording.",
+  "results": [
+    {
+      "method": "ddpm",
+      "steps": 1000,
+      "images": 8,
+      "mean_seconds": 119.37430923599459,
+      "seconds_per_image": 14.921788654499323,
+      "repeats": 1,
+      "times_seconds": [
+        119.37430923599459
+      ]
+    },
+    {
+      "method": "ddim",
+      "steps": 200,
+      "images": 8,
+      "mean_seconds": 23.967144616995938,
+      "seconds_per_image": 2.9958930771244923,
+      "repeats": 1,
+      "times_seconds": [
+        23.967144616995938
+      ]
+    },
+    {
+      "method": "ddim",
+      "steps": 50,
+      "images": 8,
+      "mean_seconds": 5.908030866004992,
+      "seconds_per_image": 0.738503858250624,
+      "repeats": 1,
+      "times_seconds": [
+        5.908030866004992
+      ]
+    }
+  ]
+}

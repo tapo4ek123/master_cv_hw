@@ -1,0 +1,48 @@
+{
+  "checkpoint": "models/afhq_base/model.pt",
+  "epoch": 15,
+  "seed": 42,
+  "optimizer_steps": 18000,
+  "weights": "ema",
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "resolution": 128,
+  "ddim_eta": 0,
+  "sampling_precision": "fp32",
+  "ddim_use_clipped_model_output": true,
+  "measurement": "Same checkpoint, image count and initial CPU-generated noise. CUDA warmup before each method; synchronized generation timing, excluding model loading, saving images and demo recording.",
+  "results": [
+    {
+      "method": "ddpm",
+      "steps": 1000,
+      "images": 8,
+      "mean_seconds": 92.4524817539932,
+      "seconds_per_image": 11.55656021924915,
+      "repeats": 1,
+      "times_seconds": [
+        92.4524817539932
+      ]
+    },
+    {
+      "method": "ddim",
+      "steps": 200,
+      "images": 8,
+      "mean_seconds": 18.10876084100164,
+      "seconds_per_image": 2.263595105125205,
+      "repeats": 1,
+      "times_seconds": [
+        18.10876084100164
+      ]
+    },
+    {
+      "method": "ddim",
+      "steps": 50,
+      "images": 8,
+      "mean_seconds": 4.658629343990469,
+      "seconds_per_image": 0.5823286679988087,
+      "repeats": 1,
+      "times_seconds": [
+        4.658629343990469
+      ]
+    }
+  ]
+}

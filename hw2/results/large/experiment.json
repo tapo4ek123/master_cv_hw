@@ -1,0 +1,31 @@
+{
+  "dataset": "AFHQ-v2-cat",
+  "train_images": 5065,
+  "validation_images": 493,
+  "image_size": 128,
+  "model_size": "large",
+  "parameters": 33888531,
+  "channels": [
+    48,
+    88,
+    184,
+    184,
+    360
+  ],
+  "checkpoint_optimizer_steps": 10000,
+  "equivalent_dataset_epochs": 7.893188548864758,
+  "batch_size": 4,
+  "learning_rate": 0.0001,
+  "warmup_steps": 500,
+  "lr_schedule": "cosine",
+  "lr_schedule_max_steps": 20000,
+  "seed": 42,
+  "precision": "fp16",
+  "ema_decay": 0.999,
+  "noise_schedule": "linear",
+  "diffusion_timesteps": 1000,
+  "training_seconds_to_checkpoint": 3189.1876832740527,
+  "last_logged_training_mse": 0.021345485374913552,
+  "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "validation_diagnostic_images": 8
+}

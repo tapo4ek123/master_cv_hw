@@ -1,0 +1,24 @@
+{
+  "dataset": "AFHQ v2 cat",
+  "source": "https://github.com/clovaai/stargan-v2#animal-faces-hq-dataset-afhq",
+  "download_url": "https://www.dropbox.com/s/vkzjokiwof5h8w6/afhq_v2.zip?dl=1",
+  "license": "CC BY-NC 4.0, NAVER Corporation",
+  "archive_sha256": "6f2540f22c6d8ebb8879a2bc0227666dd4fc765cc355cb073b63a835d679e4e3",
+  "counts": {
+    "train": 5065,
+    "val": 493
+  },
+  "original_resolution": [
+    512,
+    512
+  ],
+  "original_splits": {
+    "train": [
+      "train"
+    ],
+    "val": [
+      "test"
+    ]
+  },
+  "validation": "Official held-out cat split, saved as val/cat; excluded from training"
+}

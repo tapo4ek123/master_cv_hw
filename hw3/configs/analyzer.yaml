@@ -1,0 +1,33 @@
+model_repository: /models
+triton_launch_mode: local
+triton_server_path: /opt/tritonserver/bin/tritonserver
+perf_analyzer_path: /usr/local/bin/perf_analyzer
+checkpoint_directory: /work/results/model_analyzer/checkpoints
+output_model_repository_path: /work/results/model_analyzer/models
+override_output_model_repository: true
+export_path: /work/results/model_analyzer
+triton_output_path: /work/results/model_analyzer/triton.log
+run_config_search_disable: true
+concurrency: [1, 2, 4, 8, 16]
+batch_sizes: [1]
+client_protocol: grpc
+num_top_model_configs: 3
+objectives:
+  perf_throughput: 1
+constraints:
+  perf_latency_p99:
+    max: 50
+perf_analyzer_flags:
+  measurement-mode: time_windows
+  measurement-interval: 5000
+  stability-percentage: 20
+  max-trials: 20
+profile_models:
+  resnet18:
+    model_config_parameters:
+      max_batch_size: [4, 8, 16]
+      dynamic_batching:
+        max_queue_delay_microseconds: [0, 1000]
+      instance_group:
+        - kind: KIND_GPU
+          count: [1, 2]

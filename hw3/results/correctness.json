@@ -1,0 +1,30 @@
+{
+  "images": [
+    "examples/dog.jpg",
+    "examples/cat.jpg"
+  ],
+  "reference_same_batch_size": true,
+  "protocols": {
+    "http": {
+      "max_abs_diff": 0.0,
+      "top1_matches": true
+    },
+    "grpc": {
+      "max_abs_diff": 0.0,
+      "top1_matches": true
+    }
+  },
+  "metrics": {
+    "before": {
+      "counter": 0.07085660900338553,
+      "gauge": 0.0
+    },
+    "after": {
+      "counter": 2.682083555017016,
+      "gauge": 0.0
+    },
+    "maximum_gauge": 1.0,
+    "load_requests": 400,
+    "samples": 441
+  }
+}

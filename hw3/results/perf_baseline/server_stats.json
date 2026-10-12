@@ -1,0 +1,32 @@
+[
+  {
+    "concurrency": 1,
+    "images": 2217,
+    "executions": 2217,
+    "average_execution_batch": 1.0
+  },
+  {
+    "concurrency": 2,
+    "images": 3782,
+    "executions": 3782,
+    "average_execution_batch": 1.0
+  },
+  {
+    "concurrency": 4,
+    "images": 2659,
+    "executions": 2659,
+    "average_execution_batch": 1.0
+  },
+  {
+    "concurrency": 8,
+    "images": 2565,
+    "executions": 2565,
+    "average_execution_batch": 1.0
+  },
+  {
+    "concurrency": 16,
+    "images": 2491,
+    "executions": 2491,
+    "average_execution_batch": 1.0
+  }
+]

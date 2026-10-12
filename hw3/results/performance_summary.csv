@@ -1,0 +1,11 @@
+configuration,concurrency,throughput_images_per_second,mean_latency_ms,p95_latency_ms,p99_latency_ms
+perf_baseline,1,123.096,8.118,11.149,14.951
+perf_baseline,2,209.968,9.52,14.416,21.257
+perf_baseline,4,147.431,27.1,35.939,37.875
+perf_baseline,8,142.042,56.242,68.193,73.25
+perf_baseline,16,137.488,116.002,133.741,139.142
+perf_optimized,1,115.545,8.65,9.859,10.396
+perf_optimized,2,200.092,9.99,14.253,18.727
+perf_optimized,4,288.409,13.863,19.961,20.41
+perf_optimized,8,398.337,20.073,23.216,24.135
+perf_optimized,16,471.088,33.913,34.788,35.316

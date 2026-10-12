@@ -1,0 +1,65 @@
+{
+  "protocol": "grpc",
+  "results": [
+    {
+      "image": "examples/dog.jpg",
+      "top5": [
+        {
+          "class_id": 258,
+          "class": "Samoyed",
+          "probability": 0.8849285840988159
+        },
+        {
+          "class_id": 279,
+          "class": "Arctic fox",
+          "probability": 0.04565322399139404
+        },
+        {
+          "class_id": 270,
+          "class": "white wolf",
+          "probability": 0.04414905980229378
+        },
+        {
+          "class_id": 259,
+          "class": "Pomeranian",
+          "probability": 0.005619088187813759
+        },
+        {
+          "class_id": 257,
+          "class": "Great Pyrenees",
+          "probability": 0.004656033590435982
+        }
+      ]
+    },
+    {
+      "image": "examples/cat.jpg",
+      "top5": [
+        {
+          "class_id": 281,
+          "class": "tabby",
+          "probability": 0.48803091049194336
+        },
+        {
+          "class_id": 285,
+          "class": "Egyptian cat",
+          "probability": 0.3003246486186981
+        },
+        {
+          "class_id": 282,
+          "class": "tiger cat",
+          "probability": 0.1427367478609085
+        },
+        {
+          "class_id": 287,
+          "class": "lynx",
+          "probability": 0.03745391592383385
+        },
+        {
+          "class_id": 728,
+          "class": "plastic bag",
+          "probability": 0.007193449418991804
+        }
+      ]
+    }
+  ]
+}

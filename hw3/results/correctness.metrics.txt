@@ -1,0 +1,63 @@
+# HELP nv_inference_request_success Number of successful inference requests, all batch sizes
+# TYPE nv_inference_request_success counter
+nv_inference_request_success{model="resnet18",version="1"} 410
+# HELP nv_inference_request_failure Number of failed inference requests, all batch sizes
+# TYPE nv_inference_request_failure counter
+nv_inference_request_failure{model="resnet18",version="1"} 0
+# HELP nv_inference_count Number of inferences performed (does not include cached requests)
+# TYPE nv_inference_count counter
+nv_inference_count{model="resnet18",version="1"} 410
+# HELP nv_inference_exec_count Number of model executions performed (does not include cached requests)
+# TYPE nv_inference_exec_count counter
+nv_inference_exec_count{model="resnet18",version="1"} 410
+# HELP nv_inference_request_duration_us Cumulative inference request duration in microseconds (includes cached requests)
+# TYPE nv_inference_request_duration_us counter
+nv_inference_request_duration_us{model="resnet18",version="1"} 22458945
+# HELP nv_inference_queue_duration_us Cumulative inference queuing duration in microseconds (includes cached requests)
+# TYPE nv_inference_queue_duration_us counter
+nv_inference_queue_duration_us{model="resnet18",version="1"} 19474139
+# HELP nv_inference_compute_input_duration_us Cumulative compute input duration in microseconds (does not include cached requests)
+# TYPE nv_inference_compute_input_duration_us counter
+nv_inference_compute_input_duration_us{model="resnet18",version="1"} 48176
+# HELP nv_inference_compute_infer_duration_us Cumulative compute inference duration in microseconds (does not include cached requests)
+# TYPE nv_inference_compute_infer_duration_us counter
+nv_inference_compute_infer_duration_us{model="resnet18",version="1"} 2896955
+# HELP nv_inference_compute_output_duration_us Cumulative inference compute output duration in microseconds (does not include cached requests)
+# TYPE nv_inference_compute_output_duration_us counter
+nv_inference_compute_output_duration_us{model="resnet18",version="1"} 35526
+# HELP nv_energy_consumption GPU energy consumption in joules since the Triton Server started
+# TYPE nv_energy_consumption counter
+nv_energy_consumption{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 4537.159
+# HELP resnet18_processing_seconds_total Sum of processing durations of individual requests; excludes queue time
+# TYPE resnet18_processing_seconds_total counter
+resnet18_processing_seconds_total{instance="resnet18_0_0",model="resnet18",version="1"} 2.682083555017016
+# HELP nv_inference_pending_request_count Instantaneous number of pending requests awaiting execution per-model.
+# TYPE nv_inference_pending_request_count gauge
+nv_inference_pending_request_count{model="resnet18",version="1"} 0
+# HELP nv_gpu_utilization GPU utilization rate [0.0 - 1.0)
+# TYPE nv_gpu_utilization gauge
+nv_gpu_utilization{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 0.29
+# HELP nv_gpu_memory_total_bytes GPU total memory, in bytes
+# TYPE nv_gpu_memory_total_bytes gauge
+nv_gpu_memory_total_bytes{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 4294967296
+# HELP nv_gpu_memory_used_bytes GPU used memory, in bytes
+# TYPE nv_gpu_memory_used_bytes gauge
+nv_gpu_memory_used_bytes{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 1321205760
+# HELP nv_gpu_power_usage GPU power usage in watts
+# TYPE nv_gpu_power_usage gauge
+nv_gpu_power_usage{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 32.814
+# HELP nv_gpu_power_limit GPU power management limit in watts
+# TYPE nv_gpu_power_limit gauge
+nv_gpu_power_limit{gpu_uuid="GPU-f0f671cb-5831-35fa-5f22-7346ecf4450e"} 0
+# HELP nv_cpu_utilization CPU utilization rate [0.0 - 1.0]
+# TYPE nv_cpu_utilization gauge
+nv_cpu_utilization 0.2040133779264214
+# HELP nv_cpu_memory_total_bytes CPU total memory (RAM), in bytes
+# TYPE nv_cpu_memory_total_bytes gauge
+nv_cpu_memory_total_bytes 7989354496
+# HELP nv_cpu_memory_used_bytes CPU used memory (RAM), in bytes
+# TYPE nv_cpu_memory_used_bytes gauge
+nv_cpu_memory_used_bytes 6223613952
+# HELP resnet18_requests_in_progress Requests currently executing, excluding requests in the Triton queue
+# TYPE resnet18_requests_in_progress gauge
+resnet18_requests_in_progress{instance="resnet18_0_0",model="resnet18",version="1"} 0

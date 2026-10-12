@@ -1,0 +1,15 @@
+{
+  "criterion": "maximum throughput with p99 <= 50 ms",
+  "source": "results/model_analyzer/results/metrics-model-inference.csv",
+  "selected": {
+    "Model": "resnet18",
+    "Batch": "1",
+    "Concurrency": "16",
+    "Model Config Path": "resnet18_config_1",
+    "Instance Group": "1:GPU",
+    "Max Batch Size": "8",
+    "Satisfies Constraints": "Yes",
+    "Throughput (infer/sec)": "470.2",
+    "p99 Latency (ms)": "36.3"
+  }
+}

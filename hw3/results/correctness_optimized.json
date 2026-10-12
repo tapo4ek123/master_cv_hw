@@ -1,0 +1,34 @@
+{
+  "images": [
+    "examples/dog.jpg",
+    "examples/cat.jpg"
+  ],
+  "reference_same_batch_size": true,
+  "protocols": {
+    "http": {
+      "max_abs_diff": 0.0,
+      "top1_matches": true,
+      "batch_reference_max_abs_diff": 0.0,
+      "different_batch_sizes_max_abs_diff": 0.004680156707763672
+    },
+    "grpc": {
+      "max_abs_diff": 0.0,
+      "top1_matches": true,
+      "batch_reference_max_abs_diff": 0.0,
+      "different_batch_sizes_max_abs_diff": 0.004680156707763672
+    }
+  },
+  "metrics": {
+    "before": {
+      "counter": 0.07755027401435655,
+      "gauge": 0.0
+    },
+    "after": {
+      "counter": 3.80072797567118,
+      "gauge": 0.0
+    },
+    "maximum_gauge": 5.0,
+    "load_requests": 400,
+    "samples": 165
+  }
+}

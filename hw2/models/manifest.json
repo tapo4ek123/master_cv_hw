@@ -1,0 +1,46 @@
+{
+  "format": "concatenated_binary_parts",
+  "models": [
+    {
+      "name": "afhq_base",
+      "target": "afhq_base/model.pt",
+      "size_bytes": 67673098,
+      "parts": [
+        {
+          "file": "afhq_base/model.pt.001",
+          "size_bytes": 50331648,
+          "sha256": "f58546f788f7990bbf4b40c7fffd190e2fe722c09499653ab928b7ae028daded"
+        },
+        {
+          "file": "afhq_base/model.pt.002",
+          "size_bytes": 17341450,
+          "sha256": "825d9abb0c64454f920bde644271f37f0c2963f53b9b6dffd817de16e2e30df0"
+        }
+      ],
+      "sha256": "e9714786a38aad2a8b73c576892b29205ea7648b6cbfdefcdfa7359adfbff6c1"
+    },
+    {
+      "name": "afhq_large",
+      "target": "afhq_large/model.pt",
+      "size_bytes": 135682762,
+      "parts": [
+        {
+          "file": "afhq_large/model.pt.001",
+          "size_bytes": 50331648,
+          "sha256": "1c8d0303a00160e3c93b6108719eeaebdf9a44009541db6d90d9dbd637fb7d69"
+        },
+        {
+          "file": "afhq_large/model.pt.002",
+          "size_bytes": 50331648,
+          "sha256": "a28453de4b1f109697f43c39238a8276f65eae276d9221cccce8c3ebc62fa3e7"
+        },
+        {
+          "file": "afhq_large/model.pt.003",
+          "size_bytes": 35019466,
+          "sha256": "1921e83c133444b5e113d267c5e1f3bae3494a7b17d0317e3a0d4d13169056fb"
+        }
+      ],
+      "sha256": "c6e5ffea01e5cafc74b060e6d0307b7109593c0403c4c821e074486bf9afa1ff"
+    }
+  ]
+}

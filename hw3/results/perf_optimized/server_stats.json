@@ -1,0 +1,32 @@
+[
+  {
+    "concurrency": 1,
+    "images": 3771,
+    "executions": 3771,
+    "average_execution_batch": 1.0
+  },
+  {
+    "concurrency": 2,
+    "images": 3604,
+    "executions": 3603,
+    "average_execution_batch": 1.000277546489037
+  },
+  {
+    "concurrency": 4,
+    "images": 5196,
+    "executions": 2598,
+    "average_execution_batch": 2.0
+  },
+  {
+    "concurrency": 8,
+    "images": 7180,
+    "executions": 1795,
+    "average_execution_batch": 4.0
+  },
+  {
+    "concurrency": 16,
+    "images": 8505,
+    "executions": 1064,
+    "average_execution_batch": 7.993421052631579
+  }
+]
